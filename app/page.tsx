@@ -1,26 +1,35 @@
-// /app/page.jsx
-
+import { HexagonBackground } from "@/components/animate-ui/components/backgrounds/hexagon";
 import Link from "next/link";
+  
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-center px-6">
-      
-      <h1 className="text-5xl font-bold mb-4">
-        AI Resume Analyzer 🚀
-      </h1>
+  <HexagonBackground>
+  <div className="relative flex pointer-events-none flex-col items-center justify-center h-screen text-center px-6">
+    <h1 className="text-4xl space-x-2 md:text-5xl font-bold mb-4 text-[#e11021]">
+      JobFit AI
+    </h1>
+    <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white/90">
+      (AI Resume Analyzer)
+    </h1>
 
-      <p className="text-gray-400 max-w-xl mb-8">
-        Analyze your resume against any job description using AI.
-        Get match scores, ATS insights, and improvement tips instantly.
-      </p>
+  <p className="text-gray-300 text-lg mb-8 max-w-xl">
+    Analyze your resume against job descriptions and get instant insights,
+    ATS score, and improvement suggestions.
+  </p>
 
-      <Link href="/upload">
-        <button className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-xl text-lg transition">
-          Get Started
-        </button>
-      </Link>
+  <Link
+    href="/upload"
+    className="pointer-events-auto px-6 py-3 rounded-lg text-white font-medium transition-all duration-300 ease-in-out 
+               hover:scale-105 
+               hover:shadow-[0_0_20px_rgba(225,16,33,0.6)]"
+    style={{ backgroundColor: "#e11021" }}
+  >
+    Get Started
+  </Link>
 
-    </div>
+
+</div>
+</HexagonBackground>
   );
 }
