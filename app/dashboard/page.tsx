@@ -135,17 +135,17 @@ const Page = () => {
             </div>
 
             {/* ATS Score */}
-            <div className="w-full md:w-1/2 h-74.5 border-4 px-10 border-[#8B0000] rounded-xl flex flex-col py-3 items-center justify-start">
+            <div className="w-full md:w-1/2 h-74.5 border-4 md:px-10 px-6 border-[#8B0000] rounded-xl flex flex-col py-3 items-center justify-start">
               <h3 className="text-xl md:text-2xl font-semibold text-red-400">ATS Score</h3>
               <div className="w-20 md:w-25 h-[2px] bg-red-500/40 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.6)] mt-1 mb-2"></div>
               <div className="flex w-full items-center justify-between mt-4">
                 {/* ✅ Dynamic breakdown */}
-                <p className="text-[18px] mt-1 text-red-300 px-2">Formatting: {formatting}/10</p>
-                <p className="text-[18px] mt-1 text-red-300 px-2">Keywords: {keywords}/10</p>
+                <p className="text-[18px] mt-1 text-red-300 md:px-2">Formatting: {formatting}/10</p>
+                <p className="text-[18px] mt-1 text-red-300 md:px-2">Keywords: {keywords}/10</p>
               </div>
               <div className="flex w-full items-center justify-between mt-4">
-                <p className="text-[18px] mt-1 text-red-300 px-2">Experience: {experience}/10</p>
-                <p className="text-[18px] mt-1 text-red-300 px-2">Skills: {skills}/10</p>
+                <p className="text-[18px] mt-1 text-red-300 md:px-2">Experience: {experience}/10</p>
+                <p className="text-[18px] mt-1 text-red-300 md:px-2">Skills: {skills}/10</p>
               </div>
               <div className="w-full mt-4 h-[2px] bg-red-500/40 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.6)] mb-2"></div>
               {/* ✅ Dynamic average score */}
