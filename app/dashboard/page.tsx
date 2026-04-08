@@ -88,7 +88,7 @@ const Page = () => {
           {/* Match Score */}
           <div className="flex-1 border-4 border-[#8B0000] flex flex-col items-center justify-start rounded-xl p-3">
             <h3 className="md:text-2xl text-xl font-semibold text-red-400">Match Score</h3>
-            <div className="w-30 h-[2px] bg-red-500/40 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.6)] mt-1 mb-2"></div>
+            <div className=" w-25 md:w-30 h-[2px] bg-red-500/40 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.6)] mt-1 mb-2"></div>
             <div className="md:w-45 w-33 h-33 md:h-45 mt-4">
               <CircularProgressbar
                 value={percentage}
@@ -109,7 +109,7 @@ const Page = () => {
           {/* Skill Gaps */}
           <div className="flex-1 border-4 border-[#8B0000] flex flex-col items-center justify-start p-3 rounded-xl">
             <h3 className="text-xl md:text-2xl font-semibold text-red-400 text-center">Skill Gaps</h3>
-            <div className="w-25 h-[2px] bg-red-500/40 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.6)] mt-1 mb-2"></div>
+            <div className="md:w-25 w-20 h-[2px] bg-red-500/40 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.6)] mt-1 mb-2"></div>
             <div className="flex flex-wrap mt-4 gap-3 w-full justify-center">
               {/* ✅ Dynamic skill gaps */}
               {result.skill_gaps.map((gap, i) => (
@@ -125,7 +125,7 @@ const Page = () => {
             {/* Improvements */}
             <div className="w-full md:w-1/2 h-74.5 border-4 border-[#8B0000] rounded-xl flex flex-col items-center justify-start py-3">
               <h3 className="text-xl md:text-2xl font-semibold text-red-400">Improvements</h3>
-              <div className="w-35 h-[2px] bg-red-500/40 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.6)] mt-1 mb-2"></div>
+              <div className="w-30 md:w-35 h-[2px] bg-red-500/40 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.6)] mt-1 mb-2"></div>
               <ul className="list-disc list-inside mt-2 text-left px-4 text-red-200 text-md space-y-1">
                 {/* ✅ Dynamic improvements */}
                 {result.improvements.map((item, i) => (
@@ -137,7 +137,7 @@ const Page = () => {
             {/* ATS Score */}
             <div className="w-full md:w-1/2 h-74.5 border-4 px-10 border-[#8B0000] rounded-xl flex flex-col py-3 items-center justify-start">
               <h3 className="text-xl md:text-2xl font-semibold text-red-400">ATS Score</h3>
-              <div className="w-25 h-[2px] bg-red-500/40 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.6)] mt-1 mb-2"></div>
+              <div className="w-20 md:w-25 h-[2px] bg-red-500/40 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.6)] mt-1 mb-2"></div>
               <div className="flex w-full items-center justify-between mt-4">
                 {/* ✅ Dynamic breakdown */}
                 <p className="text-[18px] mt-1 text-red-300 px-2">Formatting: {formatting}/10</p>
@@ -160,9 +160,9 @@ const Page = () => {
           </div>
 
           {/* AI Suggestions */}
-          <div className="flex-1 mb-5 md:mb-0 border-4 border-[#8B0000] rounded-xl flex flex-col items-start justify-start py-3 px-4">
+          <div className="flex-1 mb-5 md:mb-0 border-4 border-[#8B0000] rounded-xl flex flex-col items-center justify-start py-3 px-4">
             <h3 className="text-xl md:text-2xl font-semibold text-red-400">AI Suggestions</h3>
-            <div className="w-20 h-[2px] bg-red-500/40 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.6)] mt-1 mb-3"></div>
+            <div className="w-30 md:w-35 h-[2px] bg-red-500/40 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.6)] mt-1 mb-3"></div>
             <ul className="list-disc list-inside mt-2 text-left text-red-200 text-base space-y-2 leading-relaxed">
               {result.ai_suggestions.map((suggestion, i) => (
                 <li key={i}>{suggestion}</li>
